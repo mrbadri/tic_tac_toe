@@ -2,10 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-// @import "./font.scss";
-
-@font-face {
-  font-family: "kdam";
-  src: url("./../../public/fonts/kdam/KdamThmorPro-Regular.ttf")
-    format("truetype");
-}
+@import "./font.scss";
