@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./font.scss";
+@import "./custom/base";
+@import "./custom/components";
+@import "./custom/utilities";
+
+@import "./fonts";
