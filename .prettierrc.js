@@ -1,6 +1,6 @@
 module.exports = {
     bracketSpacing: true,
-    printWidth: 140,
+    printWidth: 100,
     trailingComma: 'none',
     tabWidth: 4,
     useTabs: false,
