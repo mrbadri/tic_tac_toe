@@ -9,6 +9,7 @@ const alias = {
   "@/public": path.resolve(__dirname, "public"),
   "@/styles": path.resolve(__dirname, "styles"),
   "@/utils": path.resolve(__dirname, "src/utils"),
+  "@/hooks": path.resolve(__dirname, "src/hooks"),
   "@/public": path.resolve(__dirname, "public"),
 };
 
