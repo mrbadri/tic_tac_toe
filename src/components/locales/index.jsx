@@ -2,27 +2,25 @@ import { useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
 // custom
 import loadMessages from "@/utils/locales/loadMessage";
-import useLocale from "@/hooks/locales";
+import useLocale from "@/hooks/locales/useLocale";
 
 const Locales = ({ children }) => {
     const [message, setMessage] = useState();
-    const [locale, setLocale] = useLocale();
-
-    console.log("locale:", locale);
-    
+    const [locale] = useLocale();
 
     useEffect(() => {
-        loadMessages().then((massage) => {
-            setMessage(message)
-        });
-        console.log(navigator.language);
+        loadMessages(locale).then((message) => setMessage(message));
     }, [locale]);
 
-
-
-    return <IntlProvider locale={"en"}  messages={message}>
-        {children}
-    </IntlProvider>;
+    return (
+        <>
+            {message && (
+                <IntlProvider locale={locale} messages={message}>
+                    {children}
+                </IntlProvider>
+            )}
+        </>
+    );
 };
 
 export default Locales;
