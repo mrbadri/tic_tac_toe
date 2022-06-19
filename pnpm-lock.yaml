@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   autoprefixer: ^10.4.7
+  emotion: ^11.0.0
   eslint: 8.17.0
   eslint-config-next: 12.1.6
   framer-motion: ^6.3.11
@@ -11,16 +12,21 @@ specifiers:
   react-dom: 18.1.0
   react-intl: ^6.0.4
   sass: ^1.52.2
+  stylis: 4.x
+  stylis-plugin-rtl: ^2.1.1
   tailwindcss: ^3.0.24
   typescript: ^4.5
 
 dependencies:
+  emotion: 11.0.0
   framer-motion: 6.3.11_ef5jwxihqo6n7gxfmzogljlgcm
   next: 12.1.6_4cbhpxftn776lqv6vk34lzjmlm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-intl: 6.0.4_cn5jcockkrembw54osxy7yvfpi
   sass: 1.52.2
+  stylis: 4.1.1
+  stylis-plugin-rtl: 2.1.1_stylis@4.1.1
   typescript: 4.7.3
 
 devDependencies:
@@ -631,6 +637,11 @@ packages:
     hasBin: true
     dev: true
 
+  /cssjanus/2.1.0:
+    resolution: {integrity: sha512-kAijbny3GmdOi9k+QT6DGIXqFvL96aksNlGr4Rhk9qXDZYWUojU4bRc3IHWxdaLNOqgEZHuXoe5Wl2l7dxLW5g==}
+    engines: {node: '>=10.0.0'}
+    dev: false
+
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: false
@@ -735,6 +746,10 @@ packages:
   /emoji-regex/9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
     dev: true
+
+  /emotion/11.0.0:
+    resolution: {integrity: sha512-QW3CRqic3aRw1OBOcnvxaHEpCmxtlGwZ5tM9dV5rY3Rn+F41E8EgTPOqJ5VfsqQ5ZXHDs2zSDyUwGI0ZfC2+5A==}
+    dev: false
 
   /es-abstract/1.20.1:
     resolution: {integrity: sha512-WEm2oBhfoI2sImeM4OF2zE2V3BYdSF+KnSi9Sidz51fQHd7+JuF8Xgcj9/0o+OWeIeIS/MiuNnlruQrJf16GQA==}
@@ -2094,6 +2109,19 @@ packages:
         optional: true
     dependencies:
       react: 18.1.0
+
+  /stylis-plugin-rtl/2.1.1_stylis@4.1.1:
+    resolution: {integrity: sha512-q6xIkri6fBufIO/sV55md2CbgS5c6gg9EhSVATtHHCdOnbN/jcI0u3lYhNVeuI65c4lQPo67g8xmq5jrREvzlg==}
+    peerDependencies:
+      stylis: 4.x
+    dependencies:
+      cssjanus: 2.1.0
+      stylis: 4.1.1
+    dev: false
+
+  /stylis/4.1.1:
+    resolution: {integrity: sha512-lVrM/bNdhVX2OgBFNa2YJ9Lxj7kPzylieHd3TNjuGE0Re9JB7joL5VUKOVH1kdNNJTgGPpT8hmwIAPLaSyEVFQ==}
+    dev: false
 
   /supports-color/7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
